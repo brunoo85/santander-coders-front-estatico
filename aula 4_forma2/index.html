@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Cadastro de usuário</title>
+     <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <form>
+          <fieldset class="borda">
+               <legend>Cadastro de usuário</legend>
+               <div class="entrada">
+                    <label for="nome">Nome completo</label>
+                    <input type="text" name="nome" id="nome">
+               </div>
+               
+
+               <div class="entrada">
+                    <label for="numero">Número de telefone</label>
+               <input type="number" name="numero" id="numero" placeholder="Ex: (XX)XXXXX-XXXX">
+               </div>
+               
+               <div class="entrada">
+                    <label for="nascimento">Data de nascimento</label>
+                    <input type="date" name="nascimento" id="nascimento">
+               </div>
+
+               <div class="entrada">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com">
+               </div>
+
+               <div class="entrada">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha">
+               </div>
+               
+                    <input type="checkbox" name="termos" id="termos" />
+                    <label for="termos"> Aceito os termos e condições </label>
+                    
+               <div class="centro">
+                    <button id="btnEnviar" aria-label="Botão para envio de formulário">Enviar Formulário</button>
+               </div>
+                    
+          </fieldset>
+     </form>
+
+     <script>
+
+          document.querySelector("#btnEnviar").addEventListener('click', trocarAriaLabel);
+          
+     
+           function trocarAriaLabel() {
+               
+             const botaoDeEnvio = document.getElementById("btnEnviar");
+             if (
+               botaoDeEnvio.getAttribute("aria-label") ===
+               "Botão para envio de formulário"
+             ) {
+               botaoDeEnvio.setAttribute(
+                 "aria-label",
+                 "Botao para reenvio de formulario"
+               );
+             } 
+           }
+     
+     
+          /*
+          Para brincar um pouco, eu fiz o seguinte:
+           - O botão começa com "Botão para envio de formulário"
+           - Após o primeiro clique, o arial-label muda para "Botao para reenvio de formulario"
+           - Com um segundo clique, o arial-label muda para "Botao para segundo reenvio de formulario"
+          */
+           
+         </script>
+</body>
+</html>
