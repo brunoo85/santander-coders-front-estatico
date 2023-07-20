@@ -1,0 +1,35 @@
+body{
+     background: rgb(27,137,217);
+background: linear-gradient(90deg, rgba(27,137,217,1) 0%, rgba(35,232,255,1) 100%);
+}
+
+form{
+     font-weight: bold;
+}
+
+.borda{
+     border: 2px solid black;
+}
+
+input{
+     padding: 5px;
+}
+
+.entrada {
+     margin: 10px 0;
+} 
+
+.entrada input{
+     width: 75%;
+}
+
+button{
+     margin: 10px;
+     font-size: 15px;
+     padding: 5px 10px;
+     font-weight: bold;
+}
+
+.centro{
+     text-align: center;
+}

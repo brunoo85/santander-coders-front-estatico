@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button id="btnEnviar" aria-label="Botão para envio de formulário">
+      Enviar
+    </button>
+
+    <script>
+
+     document.querySelector("#btnEnviar").addEventListener('click', trocarAriaLabel);
+
+      function trocarAriaLabel() {
+        const botaoDeEnvio = document.getElementById("btnEnviar");
+        if (
+          botaoDeEnvio.getAttribute("aria-label") ===
+          "Botão para envio de formulário"
+        ) {
+          botaoDeEnvio.setAttribute(
+            "aria-label",
+            "Botao para reenvio de formulario"
+          );
+        } else if(botaoDeEnvio.getAttribute("aria-label") ===
+          "Botao para reenvio de formulario"){
+               botaoDeEnvio.setAttribute(
+            "aria-label",
+            "Botao para segundo reenvio de formulario"
+          );
+          }
+      }
+
+
+     /*
+     Para brincar um pouco, eu fiz o seguinte:
+      - O botão começa com "Botão para envio de formulário"
+      - Após o primeiro clique, o arial-label muda para "Botao para reenvio de formulario"
+      - Com um segundo clique, o arial-label muda para "Botao para segundo reenvio de formulario"
+     */
+      
+    </script>
+  </body>
+</html>
+
