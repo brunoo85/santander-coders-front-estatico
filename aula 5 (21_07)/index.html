@@ -19,7 +19,7 @@
      <main>
           <section id="catalogo">
                <h2>Cardápio/Catálogo</h2>
-               <section>
+               <section >
                     <img src="./assets/pizza.jpg" alt="pizza sabor portuguesa">
                     <div>
                          <h3>Produto 1</h3>
@@ -67,9 +67,46 @@
           <!-- Inicio da tabela -->
           <section id="tabela">
                <h2>Tabela de Preços</h2>
-
+               <div class="divTabela">
+                    <table>
+                         <thead>
+                              <th>Produto</th>
+                              <th>Preço</th>
+                         </thead>
+                         <tbody>
+                              <tr>
+                                   <td>Produto 1</td>
+                                   <td>R$ 10,00</td>
+                              </tr>
+                              <tr>
+                                   <td>Produto 2</td>
+                                   <td>R$ 15,00</td>
+                              </tr>
+                         </tbody>
+                    </table>
+               </div>
           </section>
           <!-- Inicio do forms -->
+          <section id="cadastro">
+               <h2>Formulário de Cadastro</h2>
+               <div>
+                    <form>
+                         <label for="nome">Nome:</label>
+                         <input type="text" name="nome">
+
+                         <label for="email">E-mail:</label>
+                         <input type="email" name="email">
+
+                         <label for="telefone">Telefone:</label>
+                         <input type="number" name="telefone">
+
+                         <label for="mensagem">Mensagem:</label>
+                         <textarea name="mensagem" rows="10"></textarea>
+
+                         <button>Enviar</button>
+                    </form>
+               </div>
+          </section>
      </main>
      <footer>
          <h5>© 2023 Cardápio/Catálogo Digital. Todos os direitos reservados.</h5>
