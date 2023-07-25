@@ -26,7 +26,7 @@ body{
 
 
 .cardapio{
-     background-color: #4747FF;
+     background-color: #5296d5;
      color: white;
      grid-area: cardapio;
      padding-left: 10px;
@@ -37,21 +37,21 @@ body{
 }
 
 .navegacao{
-     background-color: #00A300;
+     background-color:  #65c97a;
      color: white;
      grid-area: nave;
 
 }
 
 .conteudo{
-     background-color: orange;
+     background-color: #e7a03c;
      color: white;
      margin: 5px;
      padding: 5px;
 }
 
 .rodape{
-     background-color: #525252;
+     background-color: #364659;
      color: white;
      grid-area: rodape;
 }
